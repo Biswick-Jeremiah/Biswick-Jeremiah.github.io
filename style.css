@@ -701,7 +701,7 @@ section {
     transition: width 1.5s ease-in-out;
 }
 
-/* Projects Section */
+/* Projects & Achievements Section */
 .projects {
     background: var(--light-bg);
 }
@@ -723,6 +723,9 @@ section {
     border: 1px solid rgba(0,0,0,0.05);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
 }
 
 .project-card::before {
@@ -762,17 +765,35 @@ section {
 .project-card p {
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Achievement-specific styles */
+.achievement-list p {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.achievement-list strong {
+    color: var(--primary-color);
 }
 
 .certifications-list p {
     margin-bottom: 0.8rem;
     font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.certifications-list strong {
+    color: var(--primary-color);
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: auto;
 }
 
 .tag {
@@ -965,5 +986,9 @@ footer {
 
     .contact-info {
         grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        min-height: auto;
     }
 }
