@@ -4,51 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biswick Jeremiah - Data Scientist Agricultural Economist</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <h2>Biswick Jeremiah</h2>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Biswick Jeremiah</h2>
             </div>
-        </nav>
-    </header>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Biswick Jeremiah</h1>
-                <h2>Data Scientist Agricultural Economist</h2>
-                <p>Applying advanced analytics, econometrics, and machine learning to support evidence-based decision-making in energy access and agricultural development.</p>
-                <div class="hero-buttons">
+                <h1 class="animate-fade-in">Biswick Jeremiah</h1>
+                <h2 class="animate-slide-up">Data Scientist Agricultural Economist</h2>
+                <p class="animate-slide-up">Agricultural Economist and final-year MSc candidate in Applied Data Science with professional experience in Monitoring and Evaluation, survey management, and data systems.</p>
+                <div class="hero-buttons animate-fade-in">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
                     <a href="#projects" class="btn btn-secondary">View Projects</a>
                 </div>
             </div>
             <div class="hero-image">
-                <!-- Update this path to match your image -->
-                <img src="images/headshot.jpg" alt="Biswick Jeremiah" class="profile-photo">
+                <div class="image-container">
+                    <img src="images/headshot.jpg" alt="Biswick Jeremiah" class="profile-photo">
+                    <div class="floating-elements">
+                        <div class="floating-element element-1"><i class="fas fa-chart-line"></i></div>
+                        <div class="floating-element element-2"><i class="fas fa-database"></i></div>
+                        <div class="floating-element element-3"><i class="fas fa-leaf"></i></div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
@@ -58,20 +66,20 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Agricultural Economist and final-year MSc candidate in Applied Data Science with professional experience in Monitoring and Evaluation, survey management, and data systems. Focused on leveraging strong M&E expertise and data-driven approaches to track outcomes, verify results, and ensure renewable energy solutions reach vulnerable and underserved communities in Malawi.</p>
+                    <p class="highlight-text">Skilled in applying advanced analytics, econometrics, and machine learning to support evidence-based decision-making in energy access and agricultural development. Focused on leveraging strong M&E expertise and data-driven approaches to track outcomes, verify results, and ensure renewable energy solutions reach vulnerable and underserved communities in Malawi.</p>
                     
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Blantyre, Malawi</span>
+                    <div class="stats-grid">
+                        <div class="stat-item animate-counter" data-target="15">
+                            <h3><span class="counter">0</span>+</h3>
+                            <p>Projects Completed</p>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+265-882-324-332 / +265-993-095-655</span>
+                        <div class="stat-item animate-counter" data-target="5">
+                            <h3><span class="counter">0</span>+</h3>
+                            <p>Research Papers</p>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>biswickjeremia@gmail.com</span>
+                        <div class="stat-item animate-counter" data-target="3">
+                            <h3><span class="counter">0</span>+</h3>
+                            <p>Years Experience</p>
                         </div>
                     </div>
                 </div>
@@ -84,28 +92,92 @@
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Oct 2024 - Present</div>
+                <!-- Experience 1 -->
+                <div class="timeline-item animate-slide-left">
+                    <div class="timeline-date">October 2024 – Present</div>
                     <div class="timeline-content">
                         <h3>Economics and Data Science Intern</h3>
-                        <h4>Directorate of Research and Outreach, LUANAR</h4>
+                        <h4>Directorate of Research and Outreach, LUANAR, Lilongwe, Malawi</h4>
                         <ul>
-                            <li>Contributing to stakeholder engagement between the university and development partners</li>
-                            <li>Drafting and reviewing Memoranda of Understanding (MOUs) with partner organizations</li>
-                            <li>Designing research instruments for multidisciplinary studies in Agricultural food systems</li>
+                            <li>Contributing to stakeholder engagement between the university and development partners, coordinating research collaboration meetings annually</li>
+                            <li>Drafting and reviewing Memoranda of Understanding (MOUs) with partner organizations, ensuring alignment with university research priorities</li>
+                            <li>Designing research instruments and programming questions for multidisciplinary studies in Agricultural food systems</li>
+                            <li>Conducted quality assurance reviews of faculty publications, verifying compliance with journal whitelist requirements</li>
+                            <li>Organizing public lecture series featuring policymakers and researchers</li>
+                            <li>Managing research data systems supporting various projects</li>
                         </ul>
                     </div>
                 </div>
                 
-                <div class="timeline-item">
-                    <div class="timeline-date">Sep 2025</div>
+                <!-- Experience 2 -->
+                <div class="timeline-item animate-slide-right">
+                    <div class="timeline-date">September 2025</div>
                     <div class="timeline-content">
                         <h3>Climate Resilience Research & Data Management Consultant</h3>
-                        <h4>LUANAR / UNDP Malawi</h4>
+                        <h4>LUANAR / UNDP Malawi, Mzimba & Kasungu Districts, Malawi</h4>
                         <ul>
-                            <li>Led digital data collection for Climate Resilience Initiative Malawi (CRIM II) baseline survey</li>
-                            <li>Managed large-scale field data collection across multiple districts</li>
-                            <li>Performed data cleaning and validation on multi-dimensional datasets</li>
+                            <li>Led the digital data collection initiative for the Climate Resilience Initiative Malawi (CRIM II) baseline survey, programming a complex 200+ question instrument using KoboToolbox/ODK</li>
+                            <li>Managed and supervised a large-scale field data collection operation across multiple districts, ensuring adherence to research protocols and ethical guidelines</li>
+                            <li>Performed rigorous data cleaning, validation, and processing on multi-dimensional datasets covering household demographics, climate hazards, adaptation strategies, and agricultural economics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item animate-slide-left">
+                    <div class="timeline-date">September – October 2025</div>
+                    <div class="timeline-content">
+                        <h3>Data Management Consultant</h3>
+                        <h4>Agriculture Natural Resources Management Consortium (ANARMAC), Lilongwe, Malawi</h4>
+                        <ul>
+                            <li>Programmed digital questionnaires using KoboToolbox for honey value chain diagnostic study</li>
+                            <li>Managed field data collection operations and supervised data quality assurance</li>
+                            <li>Cleaned and processed survey data</li>
+                            <li>Conducted statistical analysis using Stata for value chain assessment and reporting</li>
+                            <li>Contributed to data-driven insights for national honey production estimates and market analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="timeline-item animate-slide-right">
+                    <div class="timeline-date">June – September 2024</div>
+                    <div class="timeline-content">
+                        <h3>Data Manager & Field Supervisor</h3>
+                        <h4>SMARTEX Project, LUANAR, Lilongwe, Malawi</h4>
+                        <ul>
+                            <li>Programmed and optimized survey questionnaires for data collection</li>
+                            <li>Managed survey data, ensuring accuracy and consistency</li>
+                            <li>Supervised 24 enumerators and coordinated field logistics</li>
+                            <li>Assisted in training field staff on data collection techniques</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="timeline-item animate-slide-left">
+                    <div class="timeline-date">January – February 2024</div>
+                    <div class="timeline-content">
+                        <h3>Monitoring and Evaluation Intern</h3>
+                        <h4>Ministry of Agriculture, Lilongwe, Malawi</h4>
+                        <ul>
+                            <li>Collected, calculated, and visualized monthly farmgate prices to support agricultural market monitoring and reporting</li>
+                            <li>Assisted in drafting loose minutes and preparing summaries for internal meetings and stakeholder engagements</li>
+                            <li>Supported the Monitoring and Evaluation unit with data entry, cleaning, and basic analysis for policy-related assessments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 6 -->
+                <div class="timeline-item animate-slide-right">
+                    <div class="timeline-date">July – August 2023</div>
+                    <div class="timeline-content">
+                        <h3>Research Intern</h3>
+                        <h4>Malawi National Planning Commission (NPC), Lilongwe, Malawi</h4>
+                        <ul>
+                            <li>Conducted econometric analysis on national economic policies using Stata and International Futures Software (IFS)</li>
+                            <li>Assisted in child poverty analysis and policy impact assessments</li>
+                            <li>Engaged with government and NGO stakeholders for data-driven policy recommendations</li>
                         </ul>
                     </div>
                 </div>
@@ -118,17 +190,32 @@
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="education-grid">
-                <div class="education-item">
-                    <h3>MSc in Applied Data Science</h3>
-                    <h4>Lilongwe University of Agriculture and Natural Resources (LUANAR)</h4>
-                    <p class="education-date">Sep 2024 - May 2026</p>
-                    <p>Environment and Climate Change Modeling</p>
+                <div class="education-item animate-scale">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Master of Science in Applied Data Science</h3>
+                    <h4>Lilongwe University of Agriculture and Natural Resources (LUANAR), Lilongwe, Malawi</h4>
+                    <p class="education-date">September 2024 – May 2026</p>
+                    <p class="education-focus">Environment and Climate Change Modeling</p>
                 </div>
                 
-                <div class="education-item">
-                    <h3>BSc in Agricultural Economics</h3>
-                    <h4>Lilongwe University of Agriculture and Natural Resources (LUANAR)</h4>
-                    <p class="education-date">2019 - 2024</p>
+                <div class="education-item animate-scale">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Bachelor of Science in Agricultural Economics (Credit)</h3>
+                    <h4>Lilongwe University of Agriculture and Natural Resources (LUANAR), Lilongwe, Malawi</h4>
+                    <p class="education-date">2019 – 2024</p>
+                </div>
+
+                <div class="education-item animate-scale">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3>Malawi School Certificate of Education</h3>
+                    <h4>Zingwangwa Secondary School, Blantyre, Malawi</h4>
+                    <p class="education-date">2014 – 2018</p>
                 </div>
             </div>
         </div>
@@ -139,24 +226,170 @@
         <div class="container">
             <h2 class="section-title">Core Competencies</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming & Tools</h3>
+                <div class="skill-category animate-fade-in">
+                    <div class="skill-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Data Science & Analytics</h3>
+                    </div>
                     <div class="skill-items">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">R</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Stata</span>
-                        <span class="skill-tag">SPSS</span>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">R</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Stata</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SPSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Excel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>Data Collection</h3>
+                <div class="skill-category animate-fade-in">
+                    <div class="skill-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Programming & Tools</h3>
+                    </div>
                     <div class="skill-items">
-                        <span class="skill-tag">KoboToolbox</span>
-                        <span class="skill-tag">ODK</span>
-                        <span class="skill-tag">Survey Solutions</span>
-                        <span class="skill-tag">Data Cleaning</span>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">KoboToolbox</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ODK</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category animate-fade-in">
+                    <div class="skill-header">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Reporting & Documentation</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">LaTeX</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Overleaf</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MS PowerPoint</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MS Word</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Visualization</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="83"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Achievements Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects & Achievements</h2>
+            <div class="projects-grid">
+                <div class="project-card animate-scale">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-enabled Groundnut Pest Prediction</h3>
+                    <p class="project-date">June 2025 – Ongoing</p>
+                    <p>Awarded CARP-E Grant under ACE II-APA, African Center of Excellence in Agricultural Policy Analysis. Ongoing project on AI-enabled groundnut pest and disease prediction for smallholder farmers.</p>
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">AI</span>
+                    </div>
+                </div>
+                
+                <div class="project-card animate-scale">
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Undergraduate Research Team</h3>
+                    <p class="project-date">September 2023 – June 2024</p>
+                    <p>Founded an undergraduate Research Team at Bunda Economics Association, LUANAR. Successfully organized 3 trainings involving various stakeholders.</p>
+                    <div class="project-tags">
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Research</span>
+                        <span class="tag">Training</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-scale">
+                    <div class="project-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Trainings & Certifications</h3>
+                    <div class="certifications-list">
+                        <p>• 2025: Data Collection and Machine Learning, LUANAR</p>
+                        <p>• 2025: Data Science Hackathon, LUANAR</p>
+                        <p>• 2024: Introduction to Data Science with Python, LUANAR</p>
+                        <p>• 2024: School of Climate Change, Oxford Climate Society</p>
+                        <p>• 2019: Indabax Malawi: Data Science and Machine Learning</p>
                     </div>
                 </div>
             </div>
@@ -169,27 +402,39 @@
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>biswickjeremia@gmail.com</p>
+                    <div class="contact-item animate-slide-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+265-882-324-332<br>+265-993-095-655</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
+                        <div class="contact-details">
                             <h3>Location</h3>
                             <p>Blantyre, Malawi</p>
                         </div>
                     </div>
+                    <div class="contact-item animate-slide-up">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+265-882-324-332</p>
+                            <p>+265-993-095-655</p>
+                        </div>
+                    </div>
+                    <div class="contact-item animate-slide-right">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>biswickjeremia@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -205,4 +450,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
